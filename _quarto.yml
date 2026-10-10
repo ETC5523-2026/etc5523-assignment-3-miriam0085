@@ -4,6 +4,8 @@ project:
 website:
   title: "Between the Numbers"
   navbar:
+    background: "#EDEAE3"
+    foreground: "#262422"
     right:
       - about.qmd
       - icon: github

@@ -1,4 +1,47 @@
-/* css styles */
-.navbar-dark, .quarto-title-banner {
-  background-color: #006DAE;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap');
+
+/* 1. Page background and body text colour */
+body {
+  background-color: #EDEAE3;
+  color: #262422;
+}
+
+/* 2. Headings: serif typeface in deep stone colour */
+h1, h2, h3, h4, .title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  color: #3D3833;
+}
+
+/* 3. Site name in the navbar: match the serif heading style */
+.navbar-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+/* 4. Category sidebar title on the listing page */
+.quarto-listing-category-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: #3D3833;
+}
+
+/* 5. Links: earthy brown, darker on hover */
+a {
+  color: #6E5A47;
+}
+a:hover {
+  color: #3D3833;
+}
+
+/* 6. Thin line under the navbar to separate it from the content */
+.navbar {
+  border-bottom: 1px solid #D6D1C7;
+}
+
+/* 7. Title banner at the top of each page: slightly darker stone */
+.quarto-title-banner {
+  background-color: #E2DED5;
+  color: #262422;
 }
