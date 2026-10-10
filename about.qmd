@@ -1,13 +1,23 @@
 ---
-title: "About"
-image: profile.jpg
+title: "Miriam Wu"
+image: miriam.jpg
 about:
   template: jolla
   links:
     - icon: github
       text: Github
-      href: https://github.com/etc5523-2022
+      href: https://github.com/Miriam0085
+      
+    - icon: linkedin
+      text: LinkedIn
+      href: www.linkedin.com/in/Miriam-wu
+
 
 ---
+I'm a Master of Business Analytics student at Monash University, with a background in business administration and English literature.
 
-This is a blog template for the ETC5523 Communicating with Data assessment at Monash University.
+Before moving into analytics, I worked in medical device sales at Johnson & Johnson and across retail and hospitality. These experiences shaped my interest in understanding people, their needs, and the decisions that influence their experiences.
+
+I believe data can do more than inform business decisions. It can help us better understand people and create more meaningful experiences. While data may seem cold, the stories it reveals are deeply human.
+
+This site is where I explore those stories, turning data into insights that help us understand not only what is happening, but why it matters in the real world.

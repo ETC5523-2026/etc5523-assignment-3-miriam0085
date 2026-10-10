@@ -7,7 +7,8 @@ website:
     background: "#EDEAE3"
     foreground: "#262422"
     right:
-      - about.qmd
+      - href: about.qmd
+        text: About me
       - icon: github
         href: https://github.com/Miriam0085
 format:
