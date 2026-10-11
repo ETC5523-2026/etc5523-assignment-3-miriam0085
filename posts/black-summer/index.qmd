@@ -1,11 +1,43 @@
 ---
-title: "Welcome To My Blog Template"
-author: "Emi Tanaka"
-date: "2022-07-18"
-categories: [news]
+title: "Black Summer wasn't just bad luck. Climate change loaded the dice."
+description: "Compared with the early 1900s, climate change has made fire weather as extreme as the 2019/20 season at least 30% more likely in south-eastern Australia, driven mainly by hotter heatwaves."
+author: "Miriam Wu"
+date: "2026-10-11"
+categories: [climate, bushfires]
+image: image.jpg
+bibliography: references.bib
 ---
 
-This is the first post in a Quarto blog. Welcome!
+
+## The question Black Summer left behind
+
+The 2019/20 Black Summer bushfires devastated south-eastern Australia, killing at least 34 people and destroying around 5,900 buildings [@vanoldenborgh2021]. It left many people asking: was it simply an unusually bad season, or has climate change made the hot, dry and windy conditions behind the fires more likely?
+
+Natural climate patterns in the Indian and Southern Oceans helped make 2019 unusually dry, so bad luck certainly played a part [@vanoldenborgh2021]. The real question, then, is not one or the other, but whether climate change shifted the odds as well. That matters, because if it did, dangerous fire weather could become more common in the summers ahead, with real consequences for people living near bushland.
+
+Drawing on a 2021 study by an international team of climate scientists [@vanoldenborgh2021], this post takes a closer look at what the evidence says. Has climate change made fire weather like Black Summer more likely? If so, what is behind the change? And what could it mean for the summers ahead?
+
+
+## How to read the numbers
+
+### Fire weather like 2019/20 is now at least 30% more likely
+### Heat, not drought, tipped the odds
+### What the numbers don't tell us
+Analysis (10 marks):
+
+Source of the evidence or data used in the original article clearly identified (1 mark)
+Findings reported in the original article clearly described in language appropriate for the intended audience (2 marks)
+Tables and plots designed so that the intended audience can acquire the desired information efficiently (2 marks for plot, 2 marks for table)
+Included cross-references (1 mark)
+Discussion of the evidence links back to the questions in the problem description (2 marks)
+
+
+## What this means for the summers ahead
+Conclusion (5 marks):
+
+Links back to the problem description (2 marks)
+Includes academic citation (here or other section) (1 mark)
+Summarises the findings (2 marks)
 
 ![](thumbnail.jpg)
 
