@@ -6,25 +6,26 @@ date: "2026-10-11"
 categories: [climate, bushfires]
 image: image.jpg
 bibliography: references.bib
+tbl-cap-location: bottom
 ---
 
 ## The question Black Summer left behind
 
 The 2019/20 Black Summer bushfires devastated south-eastern Australia, killing at least 34 people and destroying around 5,900 buildings [@vanoldenborgh2021]. It left many people asking: was it simply an unusually bad season, or has climate change made the hot, dry and windy conditions behind the fires more likely?
 
-Natural climate patterns in the Indian and Southern Oceans helped make 2019 exceptionally dry, so bad luck certainly played a part [@vanoldenborgh2021]. The real question, then, is not one or the other, but whether climate change shifted the odds as well. That matters, because if it did, dangerous fire weather could become more common, with real consequences for people living near bushland.
+Natural climate patterns in the Indian and Southern Oceans helped make 2019 exceptionally dry, so bad luck certainly played a part. The real question, then, is not one or the other, but whether climate change shifted the odds as well. That matters, because if it did, dangerous fire weather could become more common, with real consequences for people living near bushland.
 
 Drawing on a 2021 study by an international team of climate scientists [@vanoldenborgh2021], this post takes a closer look at what the evidence says. Has climate change made fire weather like Black Summer more likely? If so, what is behind the change? And what could it mean for the summers ahead?
 
 ## Fire weather like 2019/20 is now at least 30% more likely
 
-Fire weather as extreme as Black Summer's is now at least 30% more likely in south-eastern Australia than it was in the early 1900s [@vanoldenborgh2021]. Put simply, in any given year, the odds of experiencing conditions this extreme are now at least 1.3 times what they were a century ago.
+The study found that fire weather as extreme as Black Summer's is now at least 30% more likely in south-eastern Australia than it was in the early 1900s. Put simply, in any given year, the odds of experiencing conditions this extreme are now at least 1.3 times what they were a century ago.
 
 To measure fire weather, researchers use the Fire Weather Index, which combines temperature, humidity, wind and rainfall to assess how favourable conditions are for fire to spread. It measures the weather conditions that can drive dangerous fires, not whether a fire will actually start.
 
 How do the researchers know this? They used two approaches (@fig-odds). First, they examined weather records dating back to 1979 and projected the observed trend backwards. This suggested that fire weather like this has become at least four times as likely. But the record covers only around four decades, making this estimate highly uncertain and potentially too high.
 
-The second approach used climate models: computer simulations that compare the climate of the early 1900s with today's. These produced a more conservative estimate of at least 30%. However, the models underestimate how quickly extreme heat has increased, so this estimate is likely too low [@vanoldenborgh2021].
+The second approach used climate models: computer simulations that compare the climate of the early 1900s with today's. These produced a more conservative estimate of at least 30%. However, the models underestimate how quickly extreme heat has increased, so this estimate is likely too low.
 
 
 ```{r}
@@ -81,7 +82,8 @@ ggplot(odds, aes(y = y)) +
     axis.text.y        = element_text(hjust = 1, colour = "#262422", size = 11,
                                       margin = margin(r = 8)),
     axis.text.x        = element_text(colour = "#4A453F"),
-    axis.title.x       = element_text(size = 12, colour = "#4A453F", margin = margin(t = 8))
+    axis.title.x       = element_text(size = 11, colour = "#4A453F",
+                                      hjust = 0.3, margin = margin(t = 8))
   )
 ```
 
@@ -89,8 +91,26 @@ Neither estimate is exact, but both have limitations. The researchers therefore 
 
 What, then, is driving this change?
 
-### Fire weather like 2019/20 is now at least 30% more likely
-### Heat, not drought, tipped the odds
+
+## Hotter heatwaves, not drought, shifted the odds
+
+The researchers found that the increase in extreme fire weather was driven mainly by more intense heat, rather than a clear long-term trend towards more severe drought. The two ingredients have changed in very different ways (@tbl-drivers).
+
+Extreme heat shows a clear link to climate change. A hot week as extreme as December 2019’s is now at least twice as likely as it was in the early 1900s. Weather records also suggest that a heatwave of this intensity would have been 1–2°C cooler back then. Across most of the researchers’ analyses, rising temperatures explained the largest share of the increase in extreme fire weather, while lower humidity and wind played smaller roles.
+
+Rainfall tells a different story. The researchers found no clear long-term trend towards more extreme dry years or drier months during the fire season. Much of the severe drought in 2019 was driven by natural climate patterns. Unusual conditions over the Indian and Southern Oceans accounted for more than half of the rainfall shortfall between July and December.
+
+| Ingredient | What was measured | Change since the early 1900s | Linked to climate change? |
+|:--|:--|:--|:--|
+| **Extreme heat** | Hottest week of the year, as extreme as December 2019 | At least 2× as likely; about 1–2°C hotter (weather records) | **Yes**, the main driver |
+| **Low rainfall** | Driest years and driest fire-season months | No clear long-term trend | **No clear link**; 2019's drought was largely natural |
+| **Fire weather overall** | Fire Weather Index, as extreme as 2019/20 | At least 1.3× as likely (30% more) | **Yes**, mainly through heat |
+
+: How each ingredient of fire weather has changed. Heat shows a clear link to climate change; low rainfall does not. Source: @vanoldenborgh2021. {#tbl-drivers}
+
+Black Summer was not simply a story of bad luck or climate change. Natural climate patterns contributed much of the drought, while a warmer climate made extreme heat more likely. Together, these factors created the conditions for an exceptionally dangerous fire season.
+
+
 ### What the numbers don't tell us
 Analysis (10 marks):
 
