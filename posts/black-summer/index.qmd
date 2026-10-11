@@ -23,14 +23,14 @@ The study found that fire weather as extreme as Black Summer's is now at least 3
 
 To measure fire weather, researchers use the Fire Weather Index, which combines temperature, humidity, wind and rainfall to assess how favourable conditions are for fire to spread. It measures the weather conditions that can drive dangerous fires, not whether a fire will actually start.
 
-How do the researchers know this? They used two approaches (@fig-odds). First, they examined weather records dating back to 1979 and projected the observed trend backwards. This suggested that fire weather like this has become at least four times as likely. But the record covers only around four decades, making this estimate highly uncertain and potentially too high.
+How do the researchers know this? They used two approaches (@fig-odds). First, they examined weather records dating back to 1979, drawn from a dataset called ERA5, and projected the observed trend backwards. This suggested that fire weather like this has become at least four times as likely. But the record covers only around four decades, making this estimate highly uncertain and potentially too high.
 
 The second approach used climate models: computer simulations that compare the climate of the early 1900s with today's. These produced a more conservative estimate of at least 30%. However, the models underestimate how quickly extreme heat has increased, so this estimate is likely too low.
 
 
 ```{r}
 #| label: fig-odds
-#| fig-cap: "Both kinds of evidence show that fire weather like Black Summer's is now more likely than in the early 1900s. Each arrow shows the smallest likely increase, so the true change could be larger.dSource: @vanoldenborgh2021."
+#| fig-cap: "Both kinds of evidence show that fire weather like Black Summer's is now more likely than in the early 1900s. Each arrow shows the smallest likely increase, so the true change could be larger.Source: @vanoldenborgh2021."
 #| fig-alt: "Arrow chart comparing the chance of Black Summer-level fire weather today with the early 1900s climate, which is the baseline. Climate models: at least 1.3 times as likely, or 30% more likely, and probably too low because models miss how fast extreme heat is rising. Weather records since 1979: at least 4 times as likely, but based on a short record and probably too high."
 #| fig-width: 8
 #| fig-height: 3.2
