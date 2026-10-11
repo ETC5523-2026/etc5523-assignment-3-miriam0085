@@ -8,17 +8,86 @@ image: image.jpg
 bibliography: references.bib
 ---
 
-
 ## The question Black Summer left behind
 
 The 2019/20 Black Summer bushfires devastated south-eastern Australia, killing at least 34 people and destroying around 5,900 buildings [@vanoldenborgh2021]. It left many people asking: was it simply an unusually bad season, or has climate change made the hot, dry and windy conditions behind the fires more likely?
 
-Natural climate patterns in the Indian and Southern Oceans helped make 2019 unusually dry, so bad luck certainly played a part [@vanoldenborgh2021]. The real question, then, is not one or the other, but whether climate change shifted the odds as well. That matters, because if it did, dangerous fire weather could become more common in the summers ahead, with real consequences for people living near bushland.
+Natural climate patterns in the Indian and Southern Oceans helped make 2019 exceptionally dry, so bad luck certainly played a part [@vanoldenborgh2021]. The real question, then, is not one or the other, but whether climate change shifted the odds as well. That matters, because if it did, dangerous fire weather could become more common, with real consequences for people living near bushland.
 
 Drawing on a 2021 study by an international team of climate scientists [@vanoldenborgh2021], this post takes a closer look at what the evidence says. Has climate change made fire weather like Black Summer more likely? If so, what is behind the change? And what could it mean for the summers ahead?
 
+## Fire weather like 2019/20 is now at least 30% more likely
 
-## How to read the numbers
+Fire weather as extreme as Black Summer's is now at least 30% more likely in south-eastern Australia than it was in the early 1900s [@vanoldenborgh2021]. Put simply, in any given year, the odds of experiencing conditions this extreme are now at least 1.3 times what they were a century ago.
+
+To measure fire weather, researchers use the Fire Weather Index, which combines temperature, humidity, wind and rainfall to assess how favourable conditions are for fire to spread. It measures the weather conditions that can drive dangerous fires, not whether a fire will actually start.
+
+How do the researchers know this? They used two approaches (@fig-odds). First, they examined weather records dating back to 1979 and projected the observed trend backwards. This suggested that fire weather like this has become at least four times as likely. But the record covers only around four decades, making this estimate highly uncertain and potentially too high.
+
+The second approach used climate models: computer simulations that compare the climate of the early 1900s with today's. These produced a more conservative estimate of at least 30%. However, the models underestimate how quickly extreme heat has increased, so this estimate is likely too low [@vanoldenborgh2021].
+
+
+```{r}
+#| label: fig-odds
+#| fig-cap: "Both kinds of evidence show that fire weather like Black Summer's is now more likely than in the early 1900s. Each arrow shows the smallest likely increase, so the true change could be larger.dSource: @vanoldenborgh2021."
+#| fig-alt: "Arrow chart comparing the chance of Black Summer-level fire weather today with the early 1900s climate, which is the baseline. Climate models: at least 1.3 times as likely, or 30% more likely, and probably too low because models miss how fast extreme heat is rising. Weather records since 1979: at least 4 times as likely, but based on a short record and probably too high."
+#| fig-width: 8
+#| fig-height: 3.2
+#| code-fold: true
+#| warning: false
+#| message: false
+
+library(tidyverse)
+
+odds <- tibble(
+  evidence = c("models", "records"),
+  y        = c(2, 1),
+  at_least = c(1.3, 4),
+  label    = c("at least 1.3× (30% more likely)", "at least 4×"),
+  note     = c("Likely understates: models underestimate how fast extreme heat has risen",
+               "May overstate: based on only about 40 years of records")
+)
+
+ggplot(odds, aes(y = y)) +
+  geom_vline(xintercept = 1, colour = "#7A7268", linetype = "dashed") +
+  annotate("text", x = 1.03, y = 2.85, hjust = 0, size = 3.5,
+           fontface = "bold", colour = "#4A453F",
+           label = "Baseline: early 1900s climate") +
+  geom_segment(aes(x = 1, xend = at_least, yend = y, colour = evidence),
+               linewidth = 1.6,
+               arrow = arrow(length = unit(0.28, "cm"), type = "closed")) +
+  geom_text(aes(x = 1.03, y = y + 0.30, label = label),
+            hjust = 0, size = 3.8, colour = "#262422") +
+  geom_text(aes(x = 1.03, y = y + 0.14, label = note),
+            hjust = 0, size = 3.1, colour = "#6B645C", fontface = "italic") +
+  scale_colour_manual(values = c(models = "#6E5A47", records = "#9A8E80"),
+                      guide = "none") +
+  scale_x_continuous(limits = c(1, 4.3), breaks = 1:4,
+                     labels = c("1×", "2×", "3×", "4×"),
+                     expand = expansion(mult = c(0, 0.02))) +
+    scale_y_continuous(limits = c(0.8, 2.95), breaks = c(2, 1),
+                     labels = c("Climate models", "Weather records")) +
+  coord_cartesian(clip = "off") +
+  labs(x = "Chance of Black Summer-level fire weather, compared with the early 1900s",
+       y = NULL) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.background    = element_rect(fill = "#EDEAE3", colour = NA),
+    plot.margin        = margin(5, 20, 5, 5),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor   = element_blank(),
+    panel.grid.major.x = element_line(colour = "#DCD6CC"),
+    text               = element_text(colour = "#262422"),
+    axis.text.y        = element_text(hjust = 1, colour = "#262422", size = 11,
+                                      margin = margin(r = 8)),
+    axis.text.x        = element_text(colour = "#4A453F"),
+    axis.title.x       = element_text(size = 12, colour = "#4A453F", margin = margin(t = 8))
+  )
+```
+
+Neither estimate is exact, but both have limitations. The researchers therefore treat 30% as a lower bound rather than a precise estimate. Even this conservative figure suggests that the odds of experiencing extreme fire weather have increased meaningfully.
+
+What, then, is driving this change?
 
 ### Fire weather like 2019/20 is now at least 30% more likely
 ### Heat, not drought, tipped the odds
