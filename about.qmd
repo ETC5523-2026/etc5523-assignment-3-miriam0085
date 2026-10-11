@@ -10,7 +10,7 @@ about:
       
     - icon: linkedin
       text: LinkedIn
-      href: www.linkedin.com/in/Miriam-wu
+      href: https://www.linkedin.com/in/Miriam-wu
 
 
 ---
