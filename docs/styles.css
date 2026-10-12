@@ -132,3 +132,25 @@ a:hover {
 #quarto-margin-sidebar {
   padding-left: 5.5rem !important;
 }
+
+/* 17. More breathing room above section headings in posts */
+#quarto-document-content h2 {
+  margin-top: 3.5rem !important;
+  margin-bottom: 1.25rem !important;
+}
+
+
+/* 18. Widen the post text by trimming empty space beside the date */
+.quarto-post .metadata {
+  flex: 0 0 120px !important;
+}
+
+.quarto-post .body {
+  flex: 1 1 0 !important;
+  min-width: 0;
+}
+
+/* 19. Let the post list extend a little towards the category sidebar */
+.quarto-listing-container-default {
+  margin-right: -3.5rem !important;
+}
