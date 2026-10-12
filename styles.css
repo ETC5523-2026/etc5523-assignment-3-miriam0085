@@ -13,11 +13,12 @@ h1, h2, h3, h4, .title {
   color: #3D3833;
 }
 
-/* 3. Site name in the navbar: match the serif heading style */
+/* 3. Brand name: the largest, most distinctive text */
 .navbar-title {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.75rem;
+  color: #262422 !important;
 }
 
 /* 4. Category sidebar title on the listing page */
@@ -40,10 +41,10 @@ a:hover {
   border-bottom: 1px solid #D6D1C7;
 }
 
-/* 7. Title banner at the top of each page: slightly darker stone */
+/* 7. Title area: same background as the page, thin line below */
 .quarto-title-banner {
-  background-color: #E2DED5;
-  color: #262422;
+  background-color: #EDEAE3 !important;
+  border-bottom: 1px solid #D6D1C7;
 }
 
 /* 8. Smaller, uncropped thumbnails on the listing page */
@@ -63,4 +64,71 @@ a:hover {
 #quarto-appendix.default {
   background-color: #EDEAE3 !important;
   border-top: 1px solid #D6D1C7;
+}
+
+
+/* 10. Post titles on the listing page: dark serif, the visual hero */
+.quarto-post .listing-title,
+.quarto-post .listing-title a {
+  color: #262422 !important;
+  font-size: 1.6rem;
+}
+/* 11. Navigation links */
+.navbar .nav-link {
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  color: #4A453F !important;
+}
+
+/* 12. Homepage "Stories": a small uppercase label, not a big heading */
+.home .quarto-title-banner {
+  padding-top: 1.25rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.home .quarto-title-banner .quarto-title {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.home .quarto-title .title {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: var(--bs-body-font-family) !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  color: #6B645C !important;
+}
+
+.home .quarto-title-meta {
+  display: none !important;
+}
+
+/* 13. Dates and authors */
+.quarto-post .metadata {
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  color: #4A453F;
+}
+
+/* 14. Category tags: slightly larger and darker */
+.quarto-post .listing-category {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: #4A453F;
+  border-color: #B3AA9E;
+}
+
+/* 15. Category list on the right: quieter, matching the metadata */
+.quarto-listing-category .category,
+.quarto-listing-category .category a {
+  font-size: 0.9rem !important;
+  color: #4A453F !important;
+}
+
+/* 16. Give the category sidebar more breathing room */
+#quarto-margin-sidebar {
+  padding-left: 5.5rem !important;
 }

@@ -30,7 +30,7 @@ The second approach used climate models: computer simulations that compare the c
 
 ```{r}
 #| label: fig-odds
-#| fig-cap: "Both kinds of evidence show that fire weather like Black Summer's is now more likely than in the early 1900s. Each arrow shows the smallest likely increase, so the true change could be larger.Source: @vanoldenborgh2021."
+#| fig-cap: "Both kinds of evidence show that fire weather like Black Summer's is now more likely than in the early 1900s. Each arrow shows the smallest likely increase, so the true change could be larger. Source: @vanoldenborgh2021."
 #| fig-alt: "Arrow chart comparing the chance of Black Summer-level fire weather today with the early 1900s climate, which is the baseline. Climate models: at least 1.3 times as likely, or 30% more likely, and probably too low because models miss how fast extreme heat is rising. Weather records since 1979: at least 4 times as likely, but based on a short record and probably too high."
 #| fig-width: 8
 #| fig-height: 3.2
@@ -106,8 +106,6 @@ Rainfall tells a different story. The researchers found no clear long-term trend
 
 : How each ingredient of fire weather has changed. Heat shows a clear link to climate change; low rainfall does not. Source: @vanoldenborgh2021. {#tbl-drivers}
 
-Because heat is the main driver, what happens next depends largely on how much warmer the world becomes.
-
 
 ## With 2°C of warming, the odds of Black Summer-level fire weather climb further
 
@@ -129,9 +127,9 @@ So, was Black Summer just bad luck? The evidence suggests it was shaped by both 
 
 For people living near bushland, the key takeaway is not that another Black Summer is inevitable, but that the conditions behind it are becoming more likely. A dangerous fire season will still depend on more than weather alone, including where fires start and how well communities are prepared. But understanding how the risks are changing is an important first step towards preparing for the summers ahead.
 
-test
 
-*Cover photo by [photographer's name](link to their profile) on Unsplash.*
+
+*Cover photo by [Nerissa J](https://unsplash.com/@nerissa_j_photography) on Unsplash.*
 
 
 
