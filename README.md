@@ -2,7 +2,7 @@
 # Between the Numbers
 
 * Personal website built by **Miriam Wu**.
-* The URL for this blog is [https://etc5523-2023.github.io/blog-template/](https://etc5523-2023.github.io/blog-template/)
+* The URL for this blog is [ https://etc5523-2026.github.io/etc5523-assignment-3-miriam0085/]( https://etc5523-2026.github.io/etc5523-assignment-3-miriam0085/)
 
 # Audience statement: 
 This blog post is written for people living in or near the bushland of south-eastern Australia who follow climate change news, but are not specialists in climate research, and want to understand what the evidence says about bushfire risk in their region.
