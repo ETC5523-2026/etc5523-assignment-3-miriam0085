@@ -1,13 +1,17 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "blog-template"
+  title: "Between the Numbers"
   navbar:
+    background: "#EDEAE3"
+    foreground: "#262422"
     right:
-      - about.qmd
+      - href: about.qmd
+        text: About me
       - icon: github
-        href: https://github.com/etc5523-2022
+        href: https://github.com/Miriam0085
 format:
   html:
     theme: cosmo
