@@ -45,3 +45,22 @@ a:hover {
   background-color: #E2DED5;
   color: #262422;
 }
+
+/* 8. Smaller, uncropped thumbnails on the listing page */
+.quarto-post .thumbnail {
+  flex: 0 0 180px !important;
+  max-width: 180px !important;
+}
+
+.quarto-post .thumbnail img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+/* 9. Match the references area to the page background */
+#quarto-appendix,
+#quarto-appendix.default {
+  background-color: #EDEAE3 !important;
+  border-top: 1px solid #D6D1C7;
+}

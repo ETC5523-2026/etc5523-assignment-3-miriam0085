@@ -4,7 +4,7 @@ description: "Compared with the early 1900s, climate change has made fire weathe
 author: "Miriam Wu"
 date: "2026-10-11"
 categories: [climate, bushfires]
-image: image.jpg
+image: tree.jpg
 bibliography: references.bib
 tbl-cap-location: bottom
 ---
@@ -87,9 +87,7 @@ ggplot(odds, aes(y = y)) +
   )
 ```
 
-Neither estimate is exact, but both have limitations. The researchers therefore treat 30% as a lower bound rather than a precise estimate. Even this conservative figure suggests that the odds of experiencing extreme fire weather have increased meaningfully.
-
-What, then, is driving this change?
+Neither estimate is exact. The researchers therefore treat 30% as a lower bound rather than a precise estimate. Even this conservative figure suggests that the odds of experiencing extreme fire weather have increased meaningfully. Since fire weather combines heat, dryness and wind, the next question is which of these has changed.
 
 
 ## Hotter heatwaves, not drought, shifted the odds
@@ -108,41 +106,32 @@ Rainfall tells a different story. The researchers found no clear long-term trend
 
 : How each ingredient of fire weather has changed. Heat shows a clear link to climate change; low rainfall does not. Source: @vanoldenborgh2021. {#tbl-drivers}
 
-Black Summer was not simply a story of bad luck or climate change. Natural climate patterns contributed much of the drought, while a warmer climate made extreme heat more likely. Together, these factors created the conditions for an exceptionally dangerous fire season.
+Because heat is the main driver, what happens next depends largely on how much warmer the world becomes.
 
 
 ## With 2°C of warming, the odds of Black Summer-level fire weather climb further
 
-Climate models suggest that fire weather as extreme as Black Summer's will become more likely as the world warms. Compared with the early 1900s, it is already at least 1.3 times as likely in today's climate, with around 1.1°C of global warming. If global warming reaches 2°C above pre-industrial levels, the odds would rise to at least four times those of the early 1900s.
+The odds could rise further as the world warms. Compared with the early 1900s, fire weather as extreme as Black Summer's is already at least 1.3 times as likely in today's climate, with around 1.1°C of global warming. If global warming reaches 2°C above pre-industrial levels, the odds would rise to at least four times those of the early 1900s.
 
 This projection comes from just two climate models, as the others did not have the future simulations needed for the analysis. Their most likely figure was closer to eight times as likely. The models also tend to underestimate the rate at which extreme heat is increasing, suggesting that the actual change could be larger.
 
-For people living near bushland, this points to a clear possibility: Black Summer-level fire weather may become less of a rare event, especially as heat, the main driver of the change, keeps rising.
 
 ## Weather is only part of the picture
 
 The study examined fire weather, not the fires themselves. It did not assess what ignited individual fires, how much dry vegetation was available to burn, or how effective hazard-reduction burning had been. Its analysis was also limited to forests between the Great Dividing Range and the coast, so the findings may not apply to grasslands or other parts of Australia.
 
-These limitations matter because weather shapes the conditions for fire, but it does not determine the full extent of the damage. The researchers note that factors such as warnings, planning and community preparedness also influenced the impact of the 2019/20 fires. More extreme fire weather increases the risk, but the consequences depend on more than weather alone.
-
-
-
-Analysis (10 marks):
-
-Source of the evidence or data used in the original article clearly identified (1 mark)
-Findings reported in the original article clearly described in language appropriate for the intended audience (2 marks)
-Tables and plots designed so that the intended audience can acquire the desired information efficiently (2 marks for plot, 2 marks for table)
-Included cross-references (1 mark)
-Discussion of the evidence links back to the questions in the problem description (2 marks)
+The researchers also note that warnings, planning and community preparedness influenced the impact of the 2019/20 fires. In other words, more extreme fire weather does not automatically mean greater damage: how a fire unfolds, and how well communities are prepared, also matter.
 
 
 ## What this means for the summers ahead
-Conclusion (5 marks):
 
-Links back to the problem description (2 marks)
-Includes academic citation (here or other section) (1 mark)
-Summarises the findings (2 marks)
+So, was Black Summer just bad luck? The evidence suggests it was shaped by both natural climate patterns and a warming climate. Natural patterns helped make 2019 exceptionally dry, but climate change had already shifted the odds. Fire weather like Black Summer's is now at least 30% more likely than in the early 1900s, driven mainly by hotter heatwaves, and the odds are projected to reach at least four times those of the early 1900s if global warming reaches 2°C [@vanoldenborgh2021].
 
-![](thumbnail.jpg)
+For people living near bushland, the key takeaway is not that another Black Summer is inevitable, but that the conditions behind it are becoming more likely. A dangerous fire season will still depend on more than weather alone, including where fires start and how well communities are prepared. But understanding how the risks are changing is an important first step towards preparing for the summers ahead.
+
+test
+
+*Cover photo by [photographer's name](link to their profile) on Unsplash.*
+
 
 
